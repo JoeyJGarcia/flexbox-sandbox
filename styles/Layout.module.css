@@ -1,0 +1,66 @@
+.container {
+  display: block;
+  margin: 20px 30px;
+}
+
+.header {
+  border: dashed red;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: rows;
+}
+
+.para {
+  margin: 10px 5px;
+  flex: 1 100px;
+}
+
+.para:nth-of-type(3) {
+  flex: 2 200px;
+}
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  min-width: 120px;
+}
+
+.topicsList li {
+  list-style: none;
+  margin-left: -20px;
+}
+
+.buttonBar {
+  width: 80%;
+  height: 50px;
+  border: solid gray 1px;
+  margin: 10px auto;
+}
+
+.buttonBar {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.buttons {
+  transition: width 2s;
+}
+
+.buttons:hover {
+  color: darkgray;
+}
+
+.buttons:first-child {
+  order: 1;
+}

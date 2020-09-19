@@ -1,65 +1,86 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
+import styles from "../styles/Layout.module.css";
+// https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <header className={styles.header}>
+        <h1>Header Goes Here</h1>
+        <div className={styles.buttonBar}>
+          <button className={styles.buttons}>Button1</button>
+          <button className={styles.buttons}>Button2</button>
+          <button className={styles.buttons}>Button3</button>
+          <button className={styles.buttons}>Button4</button>
         </div>
-      </main>
+      </header>
+      <div className={styles.layout}>
+        <section className={styles.sidebar}>
+          <h3>Topics</h3>
+          <ul className={styles.topicsList}>
+            <li>Flex Box</li>
+            <li>Grid Design</li>
+            <li>Styles 3</li>
+            <li>Styles 4</li>
+          </ul>
+        </section>
+        <section className={styles.content}>
+          <article className={styles.para}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac
+            habitasse platea dictumst quisque sagittis purus sit amet. Sem
+            integer vitae justo eget magna fermentum iaculis. Eleifend mi in
+            nulla posuere sollicitudin aliquam ultrices sagittis. Curabitur
+            gravida arcu ac tortor. Sit amet mauris commodo quis imperdiet.
+          </article>
 
+          <article className={styles.para}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac
+            habitasse platea dictumst quisque sagittis purus sit amet. Sem
+            integer vitae justo eget magna fermentum iaculis. Eleifend mi in
+            nulla posuere sollicitudin aliquam ultrices sagittis. Curabitur
+            gravida arcu ac tortor. Sit amet mauris commodo quis imperdiet.
+          </article>
+
+          <article className={styles.para}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac
+            habitasse platea dictumst quisque sagittis purus sit amet. Sem
+            integer vitae justo eget magna fermentum iaculis. Eleifend mi in
+            nulla posuere sollicitudin aliquam ultrices sagittis. Curabitur
+            gravida arcu ac tortor. Sit amet mauris commodo quis imperdiet.
+          </article>
+
+          <article className={styles.para}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac
+            habitasse platea dictumst quisque sagittis purus sit amet. Sem
+            integer vitae justo eget magna fermentum iaculis. Eleifend mi in
+            nulla posuere sollicitudin aliquam ultrices sagittis. Curabitur
+            gravida arcu ac tortor. Sit amet mauris commodo quis imperdiet.
+          </article>
+
+          <article className={styles.para}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac
+            habitasse platea dictumst quisque sagittis purus sit amet. Sem
+            integer vitae justo eget magna fermentum iaculis. Eleifend mi in
+            nulla posuere sollicitudin aliquam ultrices sagittis. Curabitur
+            gravida arcu ac tortor. Sit amet mauris commodo quis imperdiet.
+          </article>
+
+          <article className={styles.para}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac
+            habitasse platea dictumst quisque sagittis purus sit amet. Sem
+            integer vitae justo eget magna fermentum iaculis. Eleifend mi in
+            nulla posuere sollicitudin aliquam ultrices sagittis. Curabitur
+            gravida arcu ac tortor. Sit amet mauris commodo quis imperdiet.
+          </article>
+        </section>
+      </div>
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <h2>Footer Goes Here</h2>
       </footer>
     </div>
-  )
+  );
 }
